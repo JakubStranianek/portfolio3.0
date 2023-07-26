@@ -12,38 +12,41 @@ const data = [
     name: "Instagram",
     text: "@jakub_stranianek",
     href: "https://www.instagram.com/jakub_stranianek/",
-    icon: insta
+    icon: insta,
+    target: "_blank"
   },
   {
     name: "Email",
     text: "j.stranianek@gmail.com",
     href: "mailto:j.stranianek@gmail.com",
-    icon: email
+    icon: email,
+    target: "_self"
   },
   {
     name: "Github",
     text: "JakubStranianek",
     href: "https://github.com/JakubStranianek",
-    icon: github
+    icon: github,
+    target: "_blank"
   }
 ]
 export default function Contact() {
   return (
-    <div className="w-full h-screen bg-black bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="w-full h-full bg-black lg:h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       {/* WRAPPER */}
       <div className='relative w-4/5 h-full pt-10 m-auto'>
         {/* HEADER */}
         <section className='flex items-center justify-between'>
-          <Link href="/"><ArrowLeftIcon className="w-8 text-zinc-400 hover:text-white" /></Link>
+          <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
           <Navbar />
         </section>
 
         {/* CARDS */}
-        <div className='absolute w-full inset-0 h-full flex flex-col justify-center'>
-          <section className='grid items-center grid-cols-1 md:grid-cols-3 lg:gap-16'>
+        <div className='py-10 flex flex-col justify-center lg:py-0 lg:absolute lg:inset-0 lg:w-full lg:h-full'>
+          <section className='grid gap-16 items-center grid-cols-1 lg:grid-cols-3'>
             {data.map(index => {
               return (
-                <Link href={index.href} key={index.name} target='_blank'>
+                <Link href={index.href} key={index.name} target={index.target}>
                   <Card>
                     <div className='py-32 flex flex-col items-center'>
                       <div className='relative'>

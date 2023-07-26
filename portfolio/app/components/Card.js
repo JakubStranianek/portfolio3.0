@@ -22,7 +22,7 @@ export default function Card({children}) {
   return (
     <>
     <div className="w-full border border-zinc-600 rounded-xl" onMouseMove={onMouseMove}>
-        <motion.div style={{background: `radial-gradient(240px at ${mouseX}px ${mouseY}px, rgba(255, 255, 255, 0.1), transparent)`}} className="w-full h-full rounded-xl">
+        <motion.div style={{background: `radial-gradient(220px at ${mouseX}px ${mouseY}px, rgba(255, 255, 255, 0.03), transparent)`}} className="w-full h-full rounded-xl">
           {children}
         </motion.div>
     </div>
