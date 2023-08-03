@@ -9,14 +9,11 @@ export default function Error() {
         <p className="mt-6 text-base leading-7 text-zinc-400">Sorry, we couldn’t find the page you’re looking for.</p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="#"
+            href="/"
             className="rounded-md bg-zinc-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-zinc-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Go back home
-          </a>
-          <a href="#" className="text-sm font-semibold text-zinc-400">
-            Contact support <span aria-hidden="true">&rarr;</span>
-          </a>
+          </a>          
         </div>
       </div>
   </main>

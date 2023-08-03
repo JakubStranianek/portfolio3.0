@@ -6,7 +6,8 @@
       "description": "A modern, user-friendly website for a traditional barbershop, offering services, barber profiles and easy contact booking.",
       "slug": "villiz-barbershop",
       "href": "https://villizbarbershop.sk/",
-      "github": "https://github.com/JakubStranianek/villiz_barbershop"     
+      "github": "https://github.com/JakubStranianek/villiz_barbershop",
+      "mockup": "/../public/mockups/vbMockup.png"     
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "description": "Minimalistic and elegant design showcasing an extensive portfolio of avant-garde hairstyles and tratment techniques.",
       "slug": "nicol-studio",
       "href": "https://nicolstudio.sk/",
-      "github": "https://github.com/JakubStranianek/nicolStudioNext"    
+      "github": "https://github.com/JakubStranianek/nicolStudioNext",
+      "mockup": "/../public/mockups/nsMockup.png"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "description": "A sleek and functional clock app that provides accurate timekeeping and multiple clock faces to suit various preferences. Simple, yet reliable.",
       "slug": "clock-app",
       "href": "https://clock-app-frntmntr.netlify.app/",
-      "github": "https://github.com/JakubStranianek/clock-app"
+      "github": "https://github.com/JakubStranianek/clock-app",
+      "mockup": "/../public/mockups/clockMockup.png"
     },
     {
       "id": 4,
@@ -33,7 +36,8 @@
       "description": "Real-time search, filtering options, and detailed user profiles for seamless collaboration within the Github community.",
       "slug": "github-finder-app",
       "github": "https://github.com/JakubStranianek/github-finder",
-      "href": "https://github-finder-femntr.netlify.app/"
+      "href": "https://github-finder-femntr.netlify.app/",
+      "mockup": "/../public/mockups/gitMockup.png"
     },
     {
       "id": 5,
@@ -42,7 +46,8 @@
       "description": "A handy app to generate strong and secure passwords. Customizable options for length, character types, and easy one-click generation.",
       "slug": "password-generator-app",
       "github": "https://github.com/JakubStranianek/password-generator-app",
-      "href": "https://password-generator-femntr.netlify.app/"
+      "href": "https://password-generator-femntr.netlify.app/",
+      "mockup": "/../public/mockups/passMockup.png"
     },
     {
       "id": 6,
@@ -51,6 +56,7 @@
       "description": "An eye-catching landing page with good looking visuals for showcasing design services or products. Engaging layout to capture visitors' attention and drive conversions.",
       "slug": "design-landing-page",
       "github": "https://github.com/JakubStranianek/single-page-design-portfolio",
-      "href": "https://courageous-florentine-a78dc8.netlify.app/"
+      "href": "https://courageous-florentine-a78dc8.netlify.app/",
+      "mockup": "/../public/mockups/lpMockup.png"
     }
 ]

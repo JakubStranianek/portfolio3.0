@@ -6,6 +6,11 @@ import Card from '../components/Card'
 import insta from "../../public/icons/insta.svg"
 import email from "../../public/icons/email.svg"
 import github from "../../public/icons/github.svg"
+ 
+export const metadata = {
+  title: 'Jakub Stranianek | Contact',
+  description: 'Feel free to contact me!',
+}
 
 const data = [
   {
@@ -48,12 +53,12 @@ export default function Contact() {
               return (
                 <Link href={index.href} key={index.name} target={index.target}>
                   <Card>
-                    <div className='py-32 flex flex-col items-center'>
+                    <div className='py-8 flex flex-col items-center lg:py-32'>
                       <div className='relative'>
                         <div className='border rounded-full border-zinc-400 p-3'>
                           <Image src={index.icon} />               
                         </div>
-                        <div className='absolute inset-0 translate-x-[23px] translate-y-[46px] z-10 w-[1px] h-[150px] bg-gradient-to-b from-zinc-400 to-transparent'></div>
+                        <div className='absolute inset-0 translate-x-[23px] translate-y-[46px] z-10 w-[1px] h-[120px] bg-gradient-to-b from-zinc-400 to-transparent lg:h-[150px]'></div>
                       </div>
                       <h3 className='text-white font-cal text-2xl pt-8 pb-4'>{index.text}</h3>
                       <h5 className='text-zinc-400'>{index.name}</h5>

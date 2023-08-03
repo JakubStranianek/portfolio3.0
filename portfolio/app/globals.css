@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer base {      
   .font-cal {
     font-family: "Cal Sans";
   }

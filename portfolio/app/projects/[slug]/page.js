@@ -1,6 +1,5 @@
 import Error from "@/app/404";
 import data from "../../data.json";
-import github from "../../../public/icons/github.svg"
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Image from "next/image";
@@ -41,10 +40,12 @@ export default function ProjectDetail({params}) {
             </div>            
           </div>
 
-          <div className="w-full flex flex-col gap-8 py-20"> 
-            <div className="w-4/5 m-auto">
-              <div className="w-full bg-red-400 h-[300px]"></div>
-              <p>{item.description}</p>
+          <div className="w-full py-20"> 
+            <div className="w-4/5 m-auto flex flex-col gap-8 items-center">
+              <div className="w-full shadow-2xl lg:w-1/2">
+                <Link href={item.href} target="_blank"><Image src={item.mockup} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+              </div>
+              <p className="text-zinc-600 lg:w-1/2">{item.description}</p>
             </div>
           </div>
           </>
