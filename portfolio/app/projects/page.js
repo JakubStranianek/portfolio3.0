@@ -15,7 +15,7 @@ export default function Projects() {
      {/* HEADER */}
       <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
         <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
-            <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
+            <Link href="/" alt="homePage"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
             <Navbar />
         </div>
       </section>
