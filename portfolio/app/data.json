@@ -7,7 +7,7 @@
       "slug": "villiz-barbershop",
       "href": "https://villizbarbershop.sk/",
       "github": "https://github.com/JakubStranianek/villiz_barbershop",
-      "mockup": "/../public/mockups/vb.png"     
+      "mockup": "/images/mockups/vb.png"     
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "slug": "nicol-studio",
       "href": "https://nicolstudio.sk/",
       "github": "https://github.com/JakubStranianek/nicolStudioNext",
-      "mockup": "/../public/mockups/ns.png"
+      "mockup": "/images/mockups/ns.png"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "slug": "clock-app",
       "href": "https://clock-app-frntmntr.netlify.app/",
       "github": "https://github.com/JakubStranianek/clock-app",
-      "mockup": "/../public/mockups/clock.png"
+      "mockup": "/images/mockups/clock.png"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "slug": "github-finder-app",
       "github": "https://github.com/JakubStranianek/github-finder",
       "href": "https://github-finder-femntr.netlify.app/",
-      "mockup": "/../public/mockups/git.png"
+      "mockup": "/images/mockups/git.png"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "slug": "password-generator-app",
       "github": "https://github.com/JakubStranianek/password-generator-app",
       "href": "https://password-generator-femntr.netlify.app/",
-      "mockup": "/../public/mockups/pass.png"
+      "mockup": "/images/mockups/pass.png"
     },
     {
       "id": 6,
@@ -57,6 +57,6 @@
       "slug": "design-landing-page",
       "github": "https://github.com/JakubStranianek/single-page-design-portfolio",
       "href": "https://courageous-florentine-a78dc8.netlify.app/",
-      "mockup": "/../public/mockups/lp.png"
+      "mockup": "/images/mockups/lp.png"
     }
 ]
