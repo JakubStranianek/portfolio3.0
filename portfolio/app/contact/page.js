@@ -38,16 +38,17 @@ const data = [
 export default function Contact() {
   return (
     <div className="w-full h-full bg-black lg:h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-      {/* WRAPPER */}
-      <div className='relative w-4/5 h-full pt-10 m-auto'>
-        {/* HEADER */}
-        <section className='flex items-center justify-between'>
-          <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
+              {/* HEADER */}
+              <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
+        <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
+        <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
           <Navbar />
-        </section>
-
+        </div>
+      </section>
+      {/* WRAPPER */}
+      <div className='relative w-4/5 h-full pt-10 m-auto'>      
         {/* CARDS */}
-        <div className='py-10 flex flex-col justify-center lg:py-0 lg:absolute lg:inset-0 lg:w-full lg:h-full'>
+        <div className='py-28 flex flex-col justify-center lg:py-0 lg:absolute lg:inset-0 lg:w-full lg:h-full'>
           <section className='grid gap-16 items-center grid-cols-1 lg:grid-cols-3'>
             {data.map(index => {
               return (

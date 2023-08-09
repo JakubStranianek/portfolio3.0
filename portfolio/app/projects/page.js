@@ -11,17 +11,19 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <div className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-    {/* WRAPPER */}
-    <div className='relative w-4/5 h-full pt-10 m-auto'>
-      {/* HEADER */}
-      <section className='flex items-center justify-between'>
-        <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
-        <Navbar />
+    <div className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">      
+     {/* HEADER */}
+      <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
+        <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
+            <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" /></Link>
+            <Navbar />
+        </div>
       </section>
-
+      
+      {/* WRAPPER */}
+    <div className='relative w-4/5 h-full m-auto'>
       {/* Projects */}
-      <div className='py-14 lg:px-24 h-full'>
+      <div className='py-40 lg:px-24 h-full'>
         <h2 className='text-white font-cal text-5xl'>Projects</h2>
         <p className='text-zinc-400 my-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus repellat exercitationem velit ut ullam nisi quae sit qui officia cum sint accusamus eum nam, earum quas consequatur veniam commodi quo.</p>
 
