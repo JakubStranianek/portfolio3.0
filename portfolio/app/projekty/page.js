@@ -5,8 +5,8 @@ import Card from '../components/Card'
 import data from "../data.json"
 
 export const metadata = {
-  title: "Jakub Stranianek | Projects",
-  description: "Examples of my projects"
+  title: "Jakub Stranianek | Projekty",
+  description: "Ukážka webových stránok a aplikácií na ktorých som pracoval"
 }
 
 export default function Projects() {
@@ -24,8 +24,8 @@ export default function Projects() {
     <div className='relative w-4/5 h-full m-auto'>
       {/* Projects */}
       <div className='py-40 lg:px-24 h-full'>
-        <h2 className='text-white font-cal text-5xl'>Projects</h2>
-        <p className='text-zinc-400 my-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus repellat exercitationem velit ut ullam nisi quae sit qui officia cum sint accusamus eum nam, earum quas consequatur veniam commodi quo.</p>
+        <h2 className='text-white font-cal text-5xl'>Projekty</h2>
+        <p className='text-zinc-400 my-4'>Vitajte v sekcii projektov! Tu sú moje vytvorené webstránky a webaplikácie. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
 
@@ -33,7 +33,7 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id <= 3)).map(index => {
             return (
               <div key={index.name} className={index.id === 1 ? "lg:row-span-2 lg:col-start-1" : "lg:row-span-1 lg:col-start-2"}>              
-              <Link href={"/projects/" + index.slug}>
+              <Link href={"/projekty/" + index.slug}>
               <Card>  
                   <div className='p-8 flex flex-col gap-4'>
                     <p className='text-white'>{index.date}</p>
@@ -53,7 +53,7 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id > 3)).map(index => {
             return (
               <div key={index.name}>              
-              <Link href={"/projects/" + index.slug}>
+              <Link href={"/projekty/" + index.slug}>
               <Card>  
                   <div className='p-8 flex flex-col gap-4'>
                     <p className='text-white'>{index.date}</p>
