@@ -1,11 +1,25 @@
+"use client"
+
 import Error from "@/app/404";
 import data from "../../data.json";
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Image from "next/image";
+import Gif from "/public/test.gif"
+import { animate, motion, spring } from "framer-motion";
 
 export default function ProjectDetail({params}) {
   const filteredData = data.filter((item) => item.slug === params.slug);  
+
+  const variants = {
+    variantA: { opacity:0, x: -20, y:-20 },
+    variantB: { x: 0, y:0, opacity: 1 },
+  }
+
+  const variantsB = {
+    variantA: { opacity:0, y:-40 },
+    variantB: { y:0, opacity: 1 },
+  }
 
   if (filteredData.length === 0) {
     return <Error />
@@ -31,23 +45,39 @@ export default function ProjectDetail({params}) {
       
             <div className='relative w-4/5 h-full pt-10 m-auto'>           
             <section className="py-28 flex flex-col gap-8 text-center">
-              <h2 className="text-white text-3xl font-cal lg:text-6xl">{item.name}</h2>
-              <p className="text-zinc-400 lg:w-1/3 m-auto">{item.description}</p>
+              <motion.h2 className="text-white text-3xl font-cal lg:text-6xl" variants={variants} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>{item.name}</motion.h2>
+              <motion.p className="text-zinc-400 lg:w-1/3 m-auto" variants={variantsB} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>{item.description}</motion.p>
             
-              <div className="text-white flex gap-4 justify-center">
-                <Link href={item.github} target="_blank">Github →</Link>
-                <Link href={item.href} target="_blank">Website →</Link>
-              </div>
+              <motion.div className="text-white flex gap-4 justify-center" variants={variants} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>
+                <Link href={item.github} target="_blank" className="hover:text-zinc-400">Github →</Link>
+                <Link href={item.href} target="_blank" className="hover:text-zinc-400">Website →</Link>
+              </motion.div>
             </section>
             </div>            
           </div>
 
           <div className="w-full py-20"> 
             <div className="w-4/5 m-auto flex flex-col gap-8 items-center">
-              <div className="w-full shadow-2xl lg:w-1/2">
+              <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
                 <Link href={item.href} target="_blank"><Image src={item.mockup} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+              </motion.div>
+
+              <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
+                <Link href={item.href} target="_blank"><Image src={Gif} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+              </motion.div>
+              
+              <div className="w-full">
+                <h2 className="text-center text-xl font-cal py-8">Použité technológie</h2>
+                <div className="flex items-center justify-center gap-12">
+                  {item.technologies.map((technology) => {
+                    return (
+                      <motion.div key={technology.name} initial={{scale:1}} whileHover={{scale: 1.2}}>                
+                        <Image src={technology.svgImage} width={technology.width} height={technology.height} alt={technology.name} title={technology.name}></Image>
+                      </motion.div>
+                    )
+                  })}                
+                </div>
               </div>
-              <p className="text-zinc-600 lg:w-1/2">{item.description}</p>
             </div>
           </div>
           </>

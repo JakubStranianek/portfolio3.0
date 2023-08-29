@@ -25,7 +25,7 @@ export default function Projects() {
       {/* Projects */}
       <div className='py-40 lg:px-24 h-full'>
         <h2 className='text-white font-cal text-5xl'>Projekty</h2>
-        <p className='text-zinc-400 my-4'>Vitajte v sekcii projektov! Tu sú moje vytvorené webstránky a webaplikácie. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
+        <p className='text-zinc-400 my-4'>Vitajte v sekcii projektov! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
 
