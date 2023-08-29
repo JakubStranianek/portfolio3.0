@@ -63,7 +63,7 @@ export default function ProjectDetail({params}) {
               </motion.div>
 
               <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
-                <Link href={item.href} target="_blank"><Image src={Gif} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+                <Link href={item.href} target="_blank"><Image src={Gif} alt={"item.mockup"} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
               </motion.div>
               
               <div className="w-full">
