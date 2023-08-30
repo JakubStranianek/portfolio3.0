@@ -19,7 +19,7 @@ export default function Home() {
             <div className='w-full text-center relative flex'>                         
                 {name.map(letter => {
                   return (
-                    <motion.h2 className='text-transparent bg-white text-edge-outline bg-clip-text whitespace-nowrap leading-none font-cal text-5xl md:text-7xl lg:text-9xl' initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{delay: 0.1, duration: 1.5}}>
+                    <motion.h2 className='text-transparent bg-white text-edge-outline bg-clip-text whitespace-nowrap leading-none font-cal text-5xl md:text-7xl lg:text-9xl' initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{delay: 0.1, duration: 1.5}} key={letter}>
                       {letter}  
                     </motion.h2>
                   )
