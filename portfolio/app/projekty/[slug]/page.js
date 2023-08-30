@@ -61,11 +61,7 @@ export default function ProjectDetail({params}) {
               <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
                 <Link href={item.href} target="_blank"><Image src={item.mockup} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
               </motion.div>
-
-              <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
-                <Link href={item.href} target="_parent"><Image src={Gif} alt={"item.mockup"} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
-              </motion.div>
-              
+            
               <div className="w-full">
                 <h2 className="text-center text-xl font-cal py-8">Použité technológie</h2>
                 <div className="flex items-center justify-center gap-12">
