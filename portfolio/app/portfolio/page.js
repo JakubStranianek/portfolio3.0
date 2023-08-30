@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import {ArrowLeftIcon} from '@heroicons/react/20/solid'
+import {ArrowLeftIcon, ArrowRightIcon} from '@heroicons/react/20/solid'
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import data from "../data.json"
 
 export const metadata = {
-  title: "Jakub Stranianek | Projekty",
+  title: "Jakub Stranianek | Portfólio",
   description: "Ukážka webových stránok a aplikácií na ktorých som pracoval"
 }
 
@@ -24,8 +24,8 @@ export default function Projects() {
     <div className='relative w-4/5 h-full m-auto'>
       {/* Projects */}
       <div className='py-40 lg:px-24 h-full'>
-        <h2 className='text-white font-cal text-5xl'>Projekty</h2>
-        <p className='text-zinc-400 my-4'>Vitajte v sekcii projektov! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
+        <h2 className='text-white font-cal text-5xl'>Portfólio</h2>
+        <p className='text-zinc-400 my-4'>Vitajte v sekcii portfólio! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
 
@@ -33,13 +33,23 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id <= 3)).map(index => {
             return (
               <div key={index.name} className={index.id === 1 ? "lg:row-span-2 lg:col-start-1" : "lg:row-span-1 lg:col-start-2"}>              
-              <Link href={"/projekty/" + index.slug}>
+              <Link href={"/portfolio/" + index.slug}>
               <Card>  
-                  <div className='p-8 flex flex-col gap-4'>
+                  <div className='p-8 flex flex-col gap-4 h-full'>
                     <p className='text-white'>{index.date}</p>
                     <h2 className='text-white text-4xl font-cal'>{index.name}</h2>
+                    
+                    <div className='flex flex-col justify-between h-full'>
                     <p className='text-zinc-400 leading-8'>{index.description}</p>            
-                  </div>          
+                    
+                    {index.id === 1 ? 
+                      <div className='flex gap-3 items-center group'>
+                        <p className='text-white group-hover:text-zinc-400'>Pozrieť viac</p> 
+                        <ArrowRightIcon className="relative z-20 w-8 text-white group-hover:text-zinc-400" alt="homePage"/>
+                      </div>
+                      : ""}
+                    </div>
+                  </div>  
               </Card>
             </Link>
               </div>
@@ -53,7 +63,7 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id > 3)).map(index => {
             return (
               <div key={index.name}>              
-              <Link href={"/projekty/" + index.slug}>
+              <Link href={"/portfolio/" + index.slug}>
               <Card>  
                   <div className='p-8 flex flex-col gap-4'>
                     <p className='text-white'>{index.date}</p>
