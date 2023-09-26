@@ -1,6 +1,6 @@
 "use client"
 
-import Error from "@/app/404";
+import Error from "@/app/[locale]/404";
 import data from "../../data.json";
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";

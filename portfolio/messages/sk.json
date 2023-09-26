@@ -1,0 +1,15 @@
+{
+    "menu": {
+        "portfolio": "Portfólio",
+        "contact": "Kontakt"
+    },
+    "mainPage": {
+        "name": "Jakub Stranianek",
+        "mainText": "Ahoj, volám sa Jakub a venujem sa tvorbe webových stránok a jednoduchých webových appiek. Ak máš záujem o spoluprácu, neváhaj ma ",
+        "linkText": "kontaktovať"
+    },
+    "portfolio": {
+        "nameOfSection": "Portfólio",
+        "sectionText": "Vitajte v sekcii portfólio! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!"
+    }
+}

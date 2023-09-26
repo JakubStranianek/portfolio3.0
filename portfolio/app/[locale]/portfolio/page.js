@@ -3,20 +3,26 @@ import {ArrowLeftIcon, ArrowRightIcon} from '@heroicons/react/20/solid'
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import data from "../data.json"
+import { useTranslations } from 'next-intl'
+import Locales from '../components/Locales'
 
 export const metadata = {
-  title: "Jakub Stranianek | Portfólio",
+  title: "Jakub Stranianek | Projekty",
   description: "Ukážka webových stránok a aplikácií na ktorých som pracoval"
 }
 
 export default function Projects() {
+  const t = useTranslations('portfolio')
   return (
     <div className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">      
      {/* HEADER */}
       <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
         <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
             <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" alt="homePage"/></Link>
-            <Navbar />
+            <div className='flex gap-6'>
+              <Navbar />
+              <Locales paramSlug="projekty"/>
+            </div>
         </div>
       </section>
       
@@ -24,8 +30,8 @@ export default function Projects() {
     <div className='relative w-4/5 h-full m-auto'>
       {/* Projects */}
       <div className='py-40 lg:px-24 h-full'>
-        <h2 className='text-white font-cal text-5xl'>Portfólio</h2>
-        <p className='text-zinc-400 my-4'>Vitajte v sekcii portfólio! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!</p>
+        <h2 className='text-white font-cal text-5xl'>{t('nameOfSection')}</h2>
+        <p className='text-zinc-400 my-4'>{t('sectionText')}</p>
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
 
@@ -63,7 +69,7 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id > 3)).map(index => {
             return (
               <div key={index.name}>              
-              <Link href={"/portfolio/" + index.slug}>
+              <Link href={"/projekty/" + index.slug}>
               <Card>  
                   <div className='p-8 flex flex-col gap-4'>
                     <p className='text-white'>{index.date}</p>
