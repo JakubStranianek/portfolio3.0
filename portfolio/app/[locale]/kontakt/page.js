@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar'
 import Link from 'next/link'
 import Image from 'next/image'
 import Card from '../components/Card'
-import insta from "../../public/icons/insta.svg"
-import email from "../../public/icons/email.svg"
-import github from "../../public/icons/github.svg"
+import insta from "/public/icons/insta.svg"
+import email from "/public/icons/email.svg"
+import github from "/public/icons/github.svg"
  
 export const metadata = {
   title: 'Jakub Stranianek | Contact',
