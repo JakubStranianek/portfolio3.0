@@ -5,11 +5,12 @@ import data from "../../data.json";
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Image from "next/image";
-import Gif from "/public/test.gif"
+import Gif from "@/public/test.gif"
 import { animate, motion, spring } from "framer-motion";
 
 export default function ProjectDetail({params}) {
   const filteredData = data.filter((item) => item.slug === params.slug);  
+  const mainImage = filteredData[0].mockup;
 
   const variants = {
     variantA: { opacity:0, x: -20, y:-20 },
@@ -20,6 +21,8 @@ export default function ProjectDetail({params}) {
     variantA: { opacity:0, y:-40 },
     variantB: { y:0, opacity: 1 },
   }
+
+  const basePath = '/images/mockups/'
 
   if (filteredData.length === 0) {
     return <Error />
@@ -59,7 +62,7 @@ export default function ProjectDetail({params}) {
           <div className="w-full py-20"> 
             <div className="w-4/5 m-auto flex flex-col gap-8 items-center">
               <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
-                <Link href={item.href} target="_blank"><Image src={item.mockup} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+                <Link href={item.href} target="_blank"><Image src={`${basePath}/${item.mockup}`} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
               </motion.div>
             
               <div className="w-full">

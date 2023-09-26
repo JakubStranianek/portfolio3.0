@@ -5,23 +5,29 @@ import Card from '../components/Card'
 import data from "../data.json"
 import { useTranslations } from 'next-intl'
 import Locales from '../components/Locales'
+import { headers } from 'next/headers';
+
 
 export const metadata = {
-  title: "Jakub Stranianek | Projekty",
+  title: "Jakub Stranianek | Portfolio",
   description: "Ukážka webových stránok a aplikácií na ktorých som pracoval"
 }
 
 export default function Projects() {
   const t = useTranslations('portfolio')
+  const headersList = headers();
+  const domain = headersList.get('host') || "";
+  const fullUrl = headersList.get('referer') || "";
+
   return (
     <div className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">      
      {/* HEADER */}
       <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
         <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
             <Link href="/"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" alt="homePage"/></Link>
-            <div className='flex gap-6'>
-              <Navbar />
-              <Locales paramSlug="projekty"/>
+            <div className='flex gap-6 text-white'>
+              <Navbar />                                         
+              <Locales paramSlug="/portfolio"/>
             </div>
         </div>
       </section>
@@ -46,7 +52,7 @@ export default function Projects() {
                     <h2 className='text-white text-4xl font-cal'>{index.name}</h2>
                     
                     <div className='flex flex-col justify-between h-full'>
-                    <p className='text-zinc-400 leading-8'>{index.description}</p>            
+                    <p className='text-zinc-400 leading-8'>{fullUrl.includes("/en/") ? index.description : index.descriptionEN}</p>            
                     
                     {index.id === 1 ? 
                       <div className='flex gap-3 items-center group'>
@@ -69,12 +75,12 @@ export default function Projects() {
           {data.filter(oneIndex => (oneIndex.id > 3)).map(index => {
             return (
               <div key={index.name}>              
-              <Link href={"/projekty/" + index.slug}>
+              <Link href={"/portfolio/" + index.slug}>
               <Card>  
                   <div className='p-8 flex flex-col gap-4'>
                     <p className='text-white'>{index.date}</p>
                     <h2 className='text-white text-4xl font-cal'>{index.name}</h2>
-                    <p className='text-zinc-400 leading-8'>{index.description}</p>            
+                    <p className='text-zinc-400 leading-8'>{fullUrl.includes("/en/") ? index.description : index.descriptionEN}</p>            
                   </div>          
               </Card>
             </Link>

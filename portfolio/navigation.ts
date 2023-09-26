@@ -11,7 +11,7 @@ import {
     // If all locales use the same pathname, a
     // single external path can be provided.
     '/': '/',
-    '/projekty': '/projekty',
+    '/portfolio': '/portfolio',
    
     // If locales use different paths, you can
     // specify each external path per locale.
