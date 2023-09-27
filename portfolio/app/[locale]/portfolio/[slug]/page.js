@@ -5,8 +5,9 @@ import data from "../../data.json";
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Image from "next/image";
-import Gif from "@/public/test.gif"
 import { animate, motion, spring } from "framer-motion";
+import Technologies from "../../components/Technologies";
+import Test from "/public/test.gif"
 
 export default function ProjectDetail({params}) {
   const filteredData = data.filter((item) => item.slug === params.slug);  
@@ -29,11 +30,11 @@ export default function ProjectDetail({params}) {
   }
 
   return (
-    <div>      
+    <div>           
        {filteredData.map((item) => {
         return (   
-          <>       
-          <div key={item.id} className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+          <div key={item.id}>       
+          <div className="w-full h-full bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
              {/* HEADER */}
       <section className={'py-8 w-full fixed z-50 backdrop-blur duration-200 bg-zinc-900/500 border-b border-zinc-600'}>
         <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
@@ -54,7 +55,7 @@ export default function ProjectDetail({params}) {
               <motion.div className="text-white flex gap-4 justify-center" variants={variants} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>
                 <Link href={item.github} target="_blank" className="hover:text-zinc-400">Github →</Link>
                 <Link href={item.href} target="_blank" className="hover:text-zinc-400">Website →</Link>
-              </motion.div>
+              </motion.div>            
             </section>
             </div>            
           </div>
@@ -62,24 +63,13 @@ export default function ProjectDetail({params}) {
           <div className="w-full py-20"> 
             <div className="w-4/5 m-auto flex flex-col gap-8 items-center">
               <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
-                <Link href={item.href} target="_blank"><Image src={`${basePath}/${item.mockup}`} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                
+                <Link href={item.href} target="_blank"><Image src={`${basePath}/${mainImage}`} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                                
               </motion.div>
             
-              <div className="w-full">
-                <h2 className="text-center text-xl font-cal py-8">Použité technológie</h2>
-                <div className="flex items-center justify-center gap-12">
-                  {item.technologies.map((technology) => {
-                    return (
-                      <motion.div key={technology.name} initial={{scale:1}} whileHover={{scale: 1.2}}>                
-                        <Image src={technology.svgImage} width={technology.width} height={technology.height} alt={technology.name} title={technology.name}></Image>
-                      </motion.div>
-                    )
-                  })}                
-                </div>
-              </div>
+              <Technologies sendData={item} />
             </div>
           </div>
-          </>
+          </div>
         );
        })}
     </div>
