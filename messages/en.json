@@ -1,0 +1,18 @@
+{
+    "menu": {
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "mainPage": {
+        "name": "Jakub Stranianek",
+        "mainText": "Hi, my name is Jakub and I'm dedicated to creating websites and simple web apps. If you are interested in cooperation, do not hesitate to contact me",
+        "linkText": "contact me"
+    },
+    "portfolio": {
+        "nameOfSection": "Portfolio",
+        "sectionText": "Welcome to the portfolio section! Here you will find my created projects that I have included in my portfolio. Discover the combination of design and functionality in each project. Browse and look for mistakes so I can improve!"
+    },
+    "project": {
+        "usedTechology": "Technologies used"
+    }
+}

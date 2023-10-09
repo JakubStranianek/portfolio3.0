@@ -1,0 +1,104 @@
+[
+    {
+      "id": 1,
+      "date": "Jan 22, 2023",
+      "name": "Villiz Barbershop",
+      "description": "Moderná a používateľsky prívetivá webová stránka pre novootvorený barbershop, ponúkajúci služby, profily kaderníkov, ceny a jednoduchú možnosť rezervácie kontaktom.",
+      "descriptionEN": "A modern and user-friendly website for a newly opened barbershop, offering services, hairdresser profiles, prices and an easy contact booking option.",
+      "slug": "villiz-barbershop",
+      "href": "https://villizbarbershop.sk/",
+      "github": "https://github.com/JakubStranianek/villiz_barbershop",
+      "mockup": "vb.png",
+      "technologies": [
+        {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Gatsby", "svgImage": "/icons/Gatsby.svg", "width": "160", "height": "80"},
+        {"name": "Headless UI", "svgImage": "/icons/HeadlessUi.svg", "width": "160", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
+      ]
+    },  
+    {
+      "id": 2,
+      "date": "Jul 11, 2023",
+      "name": "Nicol Studio",
+      "description": "Minimalistická a informatívna webstránka o vlasovom salóne, kde si prídu na svoje hlavne ženy.",
+      "descriptionEN": "Minimalistic and informative website about a hair salon, where especially women will find their own.",
+      "slug": "nicol-studio",
+      "href": "https://nicolstudio.sk/",
+      "github": "https://github.com/JakubStranianek/nicolStudioNext",
+      "mockup": "ns.png",
+      "technologies": [
+        {"name": "Next.js", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Vercel", "svgImage": "/icons/Vercel.svg", "width": "160", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
+      ]       
+    },
+    {
+      "id": 3,
+      "date": "Jan 11, 2023",
+      "name": "Clock App",
+      "description": "Mini appka s použitím externej API na zber dát o polohe aby udávala presný čas daného užívateľa.",
+      "descriptionEN": "A mini app using an external API to collect location data to give the exact time of a given user.",
+      "slug": "clock-app",
+      "href": "https://clock-app-frntmntr.netlify.app/",
+      "github": "https://github.com/JakubStranianek/clock-app",
+      "mockup": "clock.png",
+      "technologies": [
+        {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "API", "svgImage": "/icons/api.svg", "width": "80", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
+      ]      
+    },
+    {
+      "id": 4,
+      "date": "Dec 20, 2022",
+      "name": "Github finder App",
+      "description": "Aplikácia na vyhľadávanie užívateľov na Githube. Využíva externé API na zber dát o užívateľoch a ich repozitároch.",
+      "descriptionEN": "An app for finding users on Github. It uses an external API to collect data about users and their repositories.",
+      "slug": "github-finder-app",
+      "github": "https://github.com/JakubStranianek/github-finder",
+      "href": "https://github-finder-femntr.netlify.app/",
+      "mockup": "git.png",
+      "technologies": [
+        {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "API", "svgImage": "/icons/api.svg", "width": "80", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
+      ]      
+    },
+    {
+      "id": 5,
+      "date": "Dec 20, 2022",
+      "name": "Password generator App",
+      "description": "Aplikácia na generovanie hesiel. Užívateľ si môže vybrať dĺžku hesla a či chce použiť veľké písmená, malé písmená, čísla a špeciálne znaky.",
+      "descriptionEN": "Password generation application. The user can choose the length of the password and whether to use uppercase, lowercase, numbers and special characters.",
+      "slug": "password-generator-app",
+      "github": "https://github.com/JakubStranianek/password-generator-app",
+      "href": "https://password-generator-femntr.netlify.app/",
+      "mockup": "pass.png",
+      "technologies": [
+        {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Google Font API", "svgImage": "/icons/GoogleFonts.svg", "width": "160", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"},
+        {"name": "Emotion", "svgImage": "/icons/emotion.png", "width": "80", "height": "80"}       
+      ]      
+    },
+    {
+      "id": 6,
+      "date": "Oct 3, 2022",
+      "name": "Design Landing Page",
+      "description": "Jednoduchá Landing Page ktorá by mohla slúžiť ako portfólio pre dizajnéra.",
+      "descriptionEN": "A simple Landing Page that could serve as a portfolio for a designer.",
+      "slug": "design-landing-page",
+      "github": "https://github.com/JakubStranianek/single-page-design-portfolio",
+      "href": "https://courageous-florentine-a78dc8.netlify.app/",
+      "mockup": "lp.png",
+      "technologies": [
+        {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Google Font API", "svgImage": "/icons/GoogleFonts.svg", "width": "160", "height": "80"},
+        {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}      
+      ]
+    }          
+]

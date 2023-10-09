@@ -9,15 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "cal-sans": "^1.0.1",
+    "framer-motion": "^10.16.4",
+    "lodash": "^4.17.21",
+    "next": "13.5.4",
+    "next-intl": "^3.0.0-beta.19",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "react-particles": "^2.12.2",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3"
   }
 }
