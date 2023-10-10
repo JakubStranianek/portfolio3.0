@@ -44,7 +44,7 @@
       "mockup": "clock.png",
       "technologies": [
         {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
-        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/netlify.svg", "width": "80", "height": "80"},
         {"name": "API", "svgImage": "/icons/api.svg", "width": "80", "height": "80"},
         {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
       ]      
@@ -61,7 +61,7 @@
       "mockup": "git.png",
       "technologies": [
         {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
-        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/netlify.svg", "width": "80", "height": "80"},
         {"name": "API", "svgImage": "/icons/api.svg", "width": "80", "height": "80"},
         {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}       
       ]      
@@ -78,7 +78,7 @@
       "mockup": "pass.png",
       "technologies": [
         {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
-        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/netlify.svg", "width": "80", "height": "80"},
         {"name": "Google Font API", "svgImage": "/icons/GoogleFonts.svg", "width": "160", "height": "80"},
         {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"},
         {"name": "Emotion", "svgImage": "/icons/emotion.png", "width": "80", "height": "80"}       
@@ -96,7 +96,7 @@
       "mockup": "lp.png",
       "technologies": [
         {"name": "React", "svgImage": "/icons/React.svg", "width": "80", "height": "80"},
-        {"name": "Netlify", "svgImage": "/icons/Netlify.svg", "width": "80", "height": "80"},
+        {"name": "Netlify", "svgImage": "/icons/netlify.svg", "width": "80", "height": "80"},
         {"name": "Google Font API", "svgImage": "/icons/GoogleFonts.svg", "width": "160", "height": "80"},
         {"name": "Tailwind CSS", "svgImage": "/icons/Tailwind.svg", "width": "80", "height": "80"}      
       ]
