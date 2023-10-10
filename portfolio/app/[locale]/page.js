@@ -20,7 +20,7 @@ export default function Home() {
             
             <div className='w-full text-center relative flex justify-center'>                                     
         <h2         
-          className='px-6 text-transparent bg-white text-edge-outline bg-clip-text whitespace-nowrap leading-none font-cal text-5xl md:text-7xl md:px-0 lg:text-9xl'         
+          className='px-4 text-transparent bg-white text-edge-outline bg-clip-text leading-none font-cal text-5xl md:text-7xl md:px-0 lg:text-9xl'         
         >
           {t('name')}
         </h2>
