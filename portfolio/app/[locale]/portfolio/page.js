@@ -6,7 +6,6 @@ import TwoColumnProjects from '../components/TwoColumnProjects'
 import data from "../data.json"
 import { useTranslations } from 'next-intl'
 import Locales from '../components/Locales'
-import { headers } from 'next/headers';
 
 
 export const metadata = {

@@ -3,10 +3,5 @@ const withNextIntl = require('next-intl/plugin')(
     './i18n.ts'
   );
    
-  module.exports = withNextIntl({
-    // Other Next.js configuration ...
-    images: {
-      path: "/",
-      formats:['image/webp']
-    }
+  module.exports = withNextIntl({   
   });
