@@ -8,8 +8,7 @@ export default function Home() {
   const t = useTranslations('mainPage');
 
   return (
-   <main className="h-screen relative bg-black">
-        <Particle />
+   <main className="w-screen h-screen relative bg-black">
         <div className='absolute z-20 w-full pt-16'>
           <Locales paramSlug="/"/>       
         </div>
@@ -18,9 +17,9 @@ export default function Home() {
               <Navbar />            
             </div>
             
-            <div className='w-full text-center relative flex justify-center'>                                     
+            <div className='w-full text-center relative flex md:w-1/2 justify-center'>                                     
         <h2         
-          className='px-4 text-transparent bg-white text-edge-outline bg-clip-text leading-none font-cal text-5xl md:text-7xl md:px-0 lg:text-9xl'         
+          className='px-4 text-transparent bg-white text-edge-outline bg-clip-text leading-none font-cal text-3xl md:text-5xl md:px-0 lg:text-8xl'         
         >
           {t('name')}
         </h2>

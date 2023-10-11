@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import {useLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import "cal-sans";
+import Particle from './components/Particle';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,12 @@ export default function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className + " selection:bg-[#13EF9A] selection:text-black"}>{children}</body>
+      <body className={inter.className + " selection:bg-[#13EF9A] selection:text-black"}>
+        <div className='absolute z-30'>
+          <Particle />
+        </div>
+        {children}
+      </body>
     </html>
   )
 }
