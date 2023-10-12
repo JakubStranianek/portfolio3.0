@@ -17,12 +17,10 @@ export default function Home() {
               <Navbar />            
             </div>
             
-            <div className='w-full text-center relative flex md:w-4/5 justify-center'>                                     
-        <h2         
-          className='px-4 text-transparent bg-white text-edge-outline bg-clip-text leading-none font-cal text-3xl md:text-5xl md:px-0 lg:text-8xl'         
-        >
-          {t('name')}
-        </h2>
+            <div className='w-fulltext-center relative flex md:w-4/5 justify-center'>                                     
+            <h1 className="z-10 text-4xl font-cal text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+              Jakub Stranianek
+            </h1>
             </div>
 
             <p className='w-10/12 my-10 text-slate-300/50 font-sans text-center md:w-3/4 lg:w-1/3 lg:my-20'>{t('mainText')} <Link href="/kontakt" className='underline hover:text-white'>{t('linkText')}</Link>.</p>
