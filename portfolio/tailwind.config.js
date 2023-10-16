@@ -14,6 +14,8 @@ module.exports = {
       },
       animation: {
         title: "title 3s ease-out forwards",
+        fadeLeft: "fadeLeft 3s ease-in-out forwards",
+				fadeRight: "fadeRight 3s ease-in-out forwards"
       },
       keyframes: {
         title: {
@@ -33,6 +35,34 @@ module.exports = {
 					"100%": {
 						"line-height": "100%",
 						opacity: "100%",
+					},
+				},
+        fadeLeft: {
+					"0%": {
+						transform: "translateX(100%)",
+						opacity: 0,
+					},
+
+					"30%": {
+						transform: "translateX(0%)",
+						opacity: 1,
+					},
+					"100%": {
+						opacity: 0,
+					},
+				},
+				fadeRight: {
+					"0%": {
+						transform: "translateX(-100%)",
+						opacity: 0,
+					},
+
+					"30%": {
+						transform: "translateX(0%)",
+						opacity: 1,
+					},
+					"100%": {
+						opacity: 0,
 					},
 				},
       }

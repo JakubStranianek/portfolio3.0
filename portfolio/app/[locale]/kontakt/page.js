@@ -9,8 +9,8 @@ import github from "/public/icons/github.svg"
 import Locales from '../components/Locales'
  
 export const metadata = {
-  title: 'Jakub Stranianek | Contact',
-  description: 'Feel free to contact me!',
+  title: "Jakub Stranianek | Kontakt",
+  description: "Kontaktujte ma a začnime spoločne riešiť Váš nasledujúci projekt. Som pripravení prebrať vaše požiadavky a následne všetko ostatné dotiahnúť do detailu."
 }
 
 const data = [

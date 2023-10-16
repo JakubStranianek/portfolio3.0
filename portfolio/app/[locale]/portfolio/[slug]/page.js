@@ -10,7 +10,7 @@ import Technologies from "../../components/Technologies";
 import Locales from "../../components/Locales";
 import { usePathname } from "next/navigation";
 
-export default function ProjectDetail({params}) {
+export default async function ProjectDetail({params}) {
   const filteredData = data.filter((item) => item.slug === params.slug);  
   const slug = filteredData[0].slug;
   const path = usePathname()
