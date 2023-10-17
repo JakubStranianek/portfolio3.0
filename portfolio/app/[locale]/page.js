@@ -13,7 +13,7 @@ export default function Home() {
           <Particle />
         </div>
 
-        <div className='absolute z-20 w-full pt-16'>
+        <div className='fixed z-20 top-10 right-16'>
           <Locales paramSlug="/"/>       
         </div>
         <div className='w-full h-full relative z-10 flex flex-col items-center justify-center overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black'>

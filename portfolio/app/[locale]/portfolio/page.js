@@ -17,8 +17,10 @@ export default function Projects() {
         <div className='relative w-4/5 h-full m-auto flex items-center justify-between'>
             <Link href="/" aria-label="Back to the homepage"><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" alt="homePage"/></Link>
             <div className='flex gap-6 text-white'>
-              <Navbar />                                         
-              <Locales paramSlug="/portfolio"/>
+              <Navbar />   
+              <div>
+                <Locales paramSlug="/portfolio"/>
+              </div>                                      
             </div>
         </div>
       </section>

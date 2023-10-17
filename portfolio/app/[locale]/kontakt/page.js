@@ -45,7 +45,9 @@ export default function Contact() {
            <Link href="/" aria-label='Link to homepage'><ArrowLeftIcon className="relative z-20 w-8 text-zinc-400 hover:text-white" alt="homePage"/></Link>
           <div className='flex gap-6'>
             <Navbar />
-            <Locales paramSlug="/portfolio"/>
+            <div>
+              <Locales paramSlug="/kontakt"/>
+            </div>
           </div>
         </div>
       </section>
