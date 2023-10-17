@@ -1,29 +1,21 @@
-"use client"
-
 import Error from "../../404"
 import data from "../../data.json";
 import {ArrowLeftIcon} from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Image from "next/image";
-import { animate, motion, spring } from "framer-motion";
 import Technologies from "../../components/Technologies";
 import Locales from "../../components/Locales";
-import { usePathname } from "next/navigation";
+import { headers } from "next/headers"
+import { useTranslations } from "next-intl";
 
-export default async function ProjectDetail({params}) {
+export default function ProjectDetail({params}) {
   const filteredData = data.filter((item) => item.slug === params.slug);  
   const slug = filteredData[0].slug;
-  const path = usePathname()
-
-  const variants = {
-    variantA: { opacity:0, x: -20, y:-20 },
-    variantB: { x: 0, y:0, opacity: 1 },
-  }
-
-  const variantsB = {
-    variantA: { opacity:0, y:-40 },
-    variantB: { y:0, opacity: 1 },
-  }
+  const headersList = headers();
+  const domain = headersList.get('host') || "";
+  const fullUrl = headersList.get('referer') || "";
+  const pathname = fullUrl.match( new RegExp(`https?:\/\/${domain}(.*)`))||[];
+  const t = useTranslations('project')
 
   const basePath = '/images'
 
@@ -53,25 +45,25 @@ export default async function ProjectDetail({params}) {
       </section>
       
             <div className='relative w-4/5 h-full pt-10 m-auto'>           
-            <section className="py-28 flex flex-col gap-8 text-center">
-              <motion.h2 className="text-white text-3xl font-cal lg:text-6xl" variants={variants} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>{item.name}</motion.h2>
-              <motion.p className="text-zinc-400 lg:w-1/3 m-auto" variants={variantsB} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>{path.includes("/en/") ? item.descriptionEN : item.description}</motion.p>
+            <section className="py-28 flex flex-col gap-8 text-center animate-fadeIn">
+              <h2 className="text-white text-3xl font-cal lg:text-6xl">{item.name}</h2>
+              <p className="text-zinc-400 lg:w-1/3 m-auto">{pathname.input.includes("/en/") ? item.descriptionEN : item.description}</p>
             
-              <motion.div className="text-white flex gap-4 justify-center" variants={variants} initial="variantA" animate="variantB" transition={{duration: 2, type: "spring"}}>
+              <div className="text-white flex gap-4 justify-center">
                 <Link href={item.github} target="_blank" className="hover:text-zinc-400">Github →</Link>
                 <Link href={item.href} target="_blank" className="hover:text-zinc-400">Website →</Link>
-              </motion.div>            
+              </div>            
             </section>
             </div>            
           </div>
 
           <div className="w-full py-20"> 
             <div className="w-4/5 m-auto flex flex-col gap-8 items-center">
-              <motion.div className="w-full shadow-2xl lg:w-1/2" variants={variantsB} initial="variantA" animate="variantB" transition={{delay: 0.8, duration: 2, type: "spring"}}>
+              <div className="w-full animate-fadeUp shadow-2xl lg:w-1/2" >
                 <Link href={item.href} target="_blank"><Image src={`${basePath}/${item.mockup}`} alt={item.mockup} width={1000} height={800} className="w-full shadow-2xl" /></Link>                                
-              </motion.div>
+              </div>
             
-              <Technologies sendData={item} />
+              <Technologies sendData={item} usedTechnology={t('usedTechology')}/>
             </div>
           </div>
           </div>

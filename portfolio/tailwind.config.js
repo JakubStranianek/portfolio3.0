@@ -15,29 +15,31 @@ module.exports = {
       animation: {
         title: "title 3s ease-out forwards",
         fadeLeft: "fadeLeft 3s ease-in-out forwards",
-				fadeRight: "fadeRight 3s ease-in-out forwards"
+		fadeRight: "fadeRight 3s ease-in-out forwards",
+		fadeIn: "fadeIn 1.5s ease-in-out forwards",
+		fadeUp: "fadeUp 2s ease-in-out forwards",
       },
       keyframes: {
-        title: {
-					"0%": {
-						"line-height": "0%",
-						"letter-spacing": "0.25em",
-						opacity: "0",
-					},
-					"25%": {
-						"line-height": "0%",
-						opacity: "0%",
-					},
-					"80%": {
-						opacity: "100%",
-					},
+				title: {
+							"0%": {
+								"line-height": "0%",
+								"letter-spacing": "0.25em",
+								opacity: "0",
+							},
+							"25%": {
+								"line-height": "0%",
+								opacity: "0%",
+							},
+							"80%": {
+								opacity: "100%",
+							},
 
-					"100%": {
-						"line-height": "100%",
-						opacity: "100%",
-					},
-				},
-        fadeLeft: {
+							"100%": {
+								"line-height": "100%",
+								opacity: "100%",
+							},
+						},
+				fadeLeft: {
 					"0%": {
 						transform: "translateX(100%)",
 						opacity: 0,
@@ -65,8 +67,33 @@ module.exports = {
 						opacity: 0,
 					},
 				},
+				fadeIn: {
+					"0%": {
+						transform: "translate(-40px, -40px)",											
+						opacity: 0,						
+					},
+
+					"100%": {
+						transform: "translate(0px, 0px)",						
+						opacity: 1,
+					},
+				},
+				fadeUp: {
+					"0%": {
+						transform: "translateY(-40px)",											
+						opacity: 0,						
+					},
+
+					"100%": {
+						transform: "translateY(0px)",						
+						opacity: 1,
+					},
+				},
+				
       }
     },
   },
-  plugins: [],
+  plugins: [
+	require("tailwindcss-animation-delay"),
+  ],
 }
