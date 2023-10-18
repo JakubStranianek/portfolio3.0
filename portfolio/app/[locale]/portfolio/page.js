@@ -7,6 +7,11 @@ import data from "../data.json"
 import { useTranslations } from 'next-intl'
 import Locales from '../components/Locales'
 
+export const metadata = {
+  title: "Jakub Stranianek | Portfolio",
+  description: "Vitajte v mojom portfóliu! Prezrite si moje najnovšie práce a objavte, ako môžem pomôcť preniesť vaše digitálne projekty na ďalší level. Spojte sa so mnou pre viac informácií a spoluprácu."
+}
+
 export default function Projects() {
   const t = useTranslations('portfolio')
 
