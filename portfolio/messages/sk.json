@@ -10,7 +10,8 @@
     },
     "portfolio": {
         "nameOfSection": "Portfólio",
-        "sectionText": "Vitajte v sekcii portfólio! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!"
+        "sectionText": "Vitajte v sekcii portfólio! Tu nájdete moje vytvorené projekty ktoré som zaradil do svojho portfólia. Objavte spojenie dizajnu a funkčnosti v každom projekte. Prechádzajte a hľadajte chyby aby som sa mohol zdokonaľovať!",
+        "seeMore": "Pozrieť viac"
     },
     "project": {
         "usedTechology": "Použité technológie"

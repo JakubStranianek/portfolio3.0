@@ -39,7 +39,7 @@ export default function Projects() {
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
 
-       <TwoColumnProjects sendData={data}/>
+       <TwoColumnProjects sendData={data} seeMore={t('seeMore')}/>
 
         <div className='w-full h-[1px] bg-zinc-400/20 my-12'></div>
         

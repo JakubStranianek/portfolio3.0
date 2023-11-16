@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/20/solid"
 import Card from "./Card"
 import { usePathname } from "next/navigation"
 
-function TwoColumnProjects({sendData}) {
+function TwoColumnProjects({sendData, seeMore}) {
   const path = usePathname()
 
     return (
@@ -24,7 +24,7 @@ function TwoColumnProjects({sendData}) {
                     
                     {index.id === 1 ? 
                       <div className='flex gap-3 items-center group'>
-                        <p className='text-white group-hover:text-zinc-400'>Pozrieť viac</p> 
+                        <p className='text-white group-hover:text-zinc-400'>{seeMore}</p> 
                         <ArrowRightIcon className="relative z-20 w-8 text-white group-hover:text-zinc-400" alt="homePage"/>
                       </div>
                       : ""}
