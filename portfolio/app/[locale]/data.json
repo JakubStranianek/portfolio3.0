@@ -19,11 +19,11 @@
     {
       "id": 2,
       "date": "Jul 11, 2023",
-      "name": "Nicol Studio",
+      "name": "Brillance Beauty Salom",
       "description": "Minimalistická a informatívna webstránka o vlasovom salóne, kde si prídu na svoje hlavne ženy.",
       "descriptionEN": "Minimalistic and informative website about a hair salon, where especially women will find their own.",
-      "slug": "nicol-studio",
-      "href": "https://nicolstudio.sk/",
+      "slug": "brillance-beauty-salon",
+      "href": "https://brillance.sk/",
       "github": "https://github.com/JakubStranianek/nicolStudioNext",
       "mockup": "ns.png",
       "technologies": [
